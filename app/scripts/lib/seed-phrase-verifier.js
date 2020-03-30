@@ -1,4 +1,4 @@
-import KeyringController from 'eth-keyring-controller'
+import KeyringController from 'cfx-keyring-controller'
 import log from 'loglevel'
 
 const seedPhraseVerifier = {
@@ -29,7 +29,7 @@ const seedPhraseVerifier = {
       }
 
       const keyring = new Keyring(opts)
-      keyring.getAccounts().then(restoredAccounts => {
+      keyring.getAccounts().then((restoredAccounts) => {
         log.debug('Created accounts: ' + JSON.stringify(createdAccounts))
         log.debug('Restored accounts: ' + JSON.stringify(restoredAccounts))
 

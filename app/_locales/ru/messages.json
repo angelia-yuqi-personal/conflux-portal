@@ -124,6 +124,9 @@
   "customRPC": {
     "message": "Пользовательский RPC"
   },
+  "dataBackupFoundInfo": {
+    "message": "Некоторые данные вашей учетной записи были экспортированы во время предыдущей установки MetaMask. Это может включать ваши настройки, контакты и токены. Вы хотите импортировать эти данные сейчас?"
+  },
   "decimalsMustZerotoTen": {
     "message": "Количество десятичных разрядов должно быть минимум 0 и максимум 36."
   },
@@ -167,7 +170,7 @@
     "message": "Введите пароль"
   },
   "etherscanView": {
-    "message": "Просмотреть счет на Etherscan"
+    "message": "Просмотреть счет на Confluxscan"
   },
   "exportPrivateKey": {
     "message": "Экспортировать закрытый ключ"
@@ -753,7 +756,7 @@
     "message": "Если вам нужно снова создать резервную копию исходной фразы, вы можете найти ее в «Настройки» -> «Безопасность»."
   },
   "endOfFlowMessage7": {
-    "message": "Если у вас есть вопросы или вы видите что-то подозрительное, пишите на support@metamask.io."
+    "message": "Если у вас есть вопросы или вы видите что-то подозрительное, пишите на portal@conflux-chain.org."
   },
   "endOfFlowMessage8": {
     "message": "MetaMask не может восстановить вашу начальную фразу. Узнать больше."
@@ -942,7 +945,7 @@
     "message": "Будьте осторожны с исходной фразой - были сообщения о сайтах, которые пытаются подражать MetaMask. MetaMask никогда не запрашивает секретную фразу (сид)!"
   },
   "protectYourKeysMessage2": {
-    "message": "Держите вашу фразу в безопасности. Если вы видите что-то подозрительное или сомневаетесь в веб-сайте, напишите support@metamask.io"
+    "message": "Держите вашу фразу в безопасности. Если вы видите что-то подозрительное или сомневаетесь в веб-сайте, напишите portal@conflux-chain.org"
   },
   "rpcUrl": {
     "message": "Новый RPC URL"
@@ -962,8 +965,11 @@
   "noConversionRateAvailable": {
     "message": "Курсы валют недоступны"
   },
+  "noThanks": {
+    "message": "Нет, спасибо"
+  },
   "notEnoughGas": {
-    "message": "Нехватает газа"
+    "message": "Не хватает газа"
   },
   "noWebcamFoundTitle": {
     "message": "Веб-камера не найдена"
@@ -1017,7 +1023,7 @@
     "message": "Недавние"
   },
   "recipientAddressPlaceholder": {
-    "message": "Поиск, публичный адрес  (0x)или ENS"
+    "message": "Поиск, публичный адрес  (0x)"
   },
   "rejectAll": {
     "message": "Отклонить все"
@@ -1045,6 +1051,10 @@
   },
   "restoreAccountWithSeed": {
     "message": "Восстановите свой аккаунт с помощью секретной фразы"
+  },
+  "restoreWalletPreferences": {
+    "message": "Были найдены данные экспортированные от $1. Вы желаете восстановить настройки вашего кошелька?",
+    "description": "$1 is the date at which the data was backed up"
   },
   "requestsAwaitingAcknowledgement": {
     "message": "запросы, ожидающие подтверждения"
@@ -1323,7 +1333,7 @@
     "message": "Посмотреть на $1"
   },
   "viewOnEtherscan": {
-    "message": "Посмотреть на Etherscan"
+    "message": "Посмотреть на Confluxscan"
   },
   "welcomeBack": {
     "message": "Рад видеть вас снова!"
@@ -1339,5 +1349,35 @@
   },
   "yourPrivateSeedPhrase": {
     "message": "Ваша сид-фраза"
+  },
+  "decryptRequest": {
+    "message": "Запрос расшифровки"
+  },
+  "decrypt": {
+    "message": "Расшифровать"
+  },
+  "decryptMessageNotice": {
+    "message": "Для $1 необходимо прочитать это сообщение, чтобы завершить Ваше действие",
+    "description": "$1 is website or dapp name"
+  },
+  "decryptMetamask": {
+    "message": "Расшифровать сообщение"
+  },
+  "decryptCopy": {
+    "message": "Скопировать расшифрованное сообщение"
+  },
+  "decryptInlineError": {
+    "message": "Это сообщение не может быть дешифровано из-за ошибки: $1",
+    "description": "$1 is error message"
+  },
+  "provide": {
+    "message": "Предоставить"
+  },
+  "encryptionPublicKeyRequest": {
+    "message": "Запрос публичного ключа шифрования"
+  },
+  "encryptionPublicKeyNotice": {
+    "message": "$1 запрашивает ваш открытый ключ шифрования. По согласованию, этот сайт сможет создавать для Вас зашифрованные сообщения.",
+    "description": "$1 is website or dapp name"
   }
 }

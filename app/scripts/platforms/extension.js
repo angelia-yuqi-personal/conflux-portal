@@ -16,7 +16,7 @@ class ExtensionPlatform {
   }
 
   closeCurrentWindow () {
-    return extension.windows.getCurrent(windowDetails => {
+    return extension.windows.getCurrent((windowDetails) => {
       return extension.windows.remove(windowDetails.id)
     })
   }
@@ -43,7 +43,7 @@ class ExtensionPlatform {
 
   getPlatformInfo (cb) {
     try {
-      extension.runtime.getPlatformInfo(platform => {
+      extension.runtime.getPlatformInfo((platform) => {
         cb(null, platform)
       })
     } catch (e) {
@@ -69,7 +69,7 @@ class ExtensionPlatform {
 
   currentTab () {
     return new Promise((resolve, reject) => {
-      extension.tabs.getCurrent(tab => {
+      extension.tabs.getCurrent((tab) => {
         const err = checkForError()
         if (err) {
           reject(err)
@@ -82,7 +82,7 @@ class ExtensionPlatform {
 
   switchToTab (tabId) {
     return new Promise((resolve, reject) => {
-      extension.tabs.update(tabId, { highlighted: true }, tab => {
+      extension.tabs.update(tabId, { highlighted: true }, (tab) => {
         const err = checkForError()
         if (err) {
           reject(err)
@@ -113,7 +113,7 @@ class ExtensionPlatform {
     const nonce = parseInt(txMeta.txParams.nonce, 16)
 
     const title = 'Confirmed transaction'
-    const message = `Transaction ${nonce} confirmed! View on Etherscan`
+    const message = `Transaction ${nonce} confirmed! View on Confluxscan`
     this._showNotification(title, message, url)
   }
 

@@ -30,7 +30,7 @@ class ConnectScreen extends Component {
         className={classnames('hw-connect__btn', {
           selected: this.state.selectedDevice === 'trezor',
         })}
-        onClick={_ => this.setState({ selectedDevice: 'trezor' })}
+        onClick={(_) => this.setState({ selectedDevice: 'trezor' })}
       >
         <img
           className="hw-connect__btn__img"
@@ -47,7 +47,7 @@ class ConnectScreen extends Component {
         className={classnames('hw-connect__btn', {
           selected: this.state.selectedDevice === 'ledger',
         })}
-        onClick={_ => this.setState({ selectedDevice: 'ledger' })}
+        onClick={(_) => this.setState({ selectedDevice: 'ledger' })}
       >
         <img
           className="hw-connect__btn__img"
@@ -191,7 +191,7 @@ class ConnectScreen extends Component {
     return (
       <div
         className="hw-tutorial"
-        ref={node => {
+        ref={(node) => {
           this.referenceNode = node
         }}
       >
@@ -218,17 +218,17 @@ class ConnectScreen extends Component {
           {this.context.t('readyToConnect')}
         </h3>
         {this.renderButtons()}
-        <p className="hw-connect__footer__msg">
-          {this.context.t('havingTroubleConnecting')}
-          <a
-            className="hw-connect__footer__link"
-            href="https://support.metamask.io/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {this.context.t('getHelp')}
-          </a>
-        </p>
+        {/* <p className="hw-connect__footer__msg"> */}
+        {/*   {this.context.t('havingTroubleConnecting')} */}
+        {/*   <a */}
+        {/*     className="hw-connect__footer__link" */}
+        {/*     href="https://support.metamask.io/" */}
+        {/*     target="_blank" */}
+        {/*     rel="noopener noreferrer" */}
+        {/*   > */}
+        {/*     {this.context.t('getHelp')} */}
+        {/*   </a> */}
+        {/* </p> */}
       </div>
     )
   }
